@@ -15,14 +15,7 @@
 
 import 'dart:collection' show LinkedHashMap;
 
-import 'package:charts_common/common.dart' as common
-    show
-        AxisSpec,
-        DateTimeFactory,
-        NumericAxisSpec,
-        Series,
-        SeriesRendererConfig,
-        TimeSeriesChart;
+import 'package:charts_common/common.dart' as common show AxisSpec, DateTimeFactory, NumericAxisSpec, Series, SeriesRendererConfig, TimeSeriesChart;
 import 'behaviors/chart_behavior.dart' show ChartBehavior;
 import 'behaviors/line_point_highlighter.dart' show LinePointHighlighter;
 import 'cartesian_chart.dart' show CartesianChart;
@@ -81,6 +74,7 @@ class TimeSeriesChart extends CartesianChart<DateTime> {
     return new common.TimeSeriesChart(
         layoutConfig: layoutConfig?.commonLayoutConfig,
         primaryMeasureAxis: primaryMeasureAxis?.createAxis(),
+        dateTimeFactory: dateTimeFactory ?? const common.LocalDateTimeFactory(),
         secondaryMeasureAxis: secondaryMeasureAxis?.createAxis(),
         disjointMeasureAxes: createDisjointMeasureAxes());
   }
