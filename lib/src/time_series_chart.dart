@@ -15,7 +15,8 @@
 
 import 'dart:collection' show LinkedHashMap;
 
-import 'package:charts_common/common.dart' as common show AxisSpec, DateTimeFactory, NumericAxisSpec, Series, SeriesRendererConfig, TimeSeriesChart;
+import 'package:charts_common/common.dart' as common
+    show AxisSpec, DateTimeFactory, NumericAxisSpec, Series, SeriesRendererConfig, TimeSeriesChart, LocalDateTimeFactory;
 import 'behaviors/chart_behavior.dart' show ChartBehavior;
 import 'behaviors/line_point_highlighter.dart' show LinePointHighlighter;
 import 'cartesian_chart.dart' show CartesianChart;
