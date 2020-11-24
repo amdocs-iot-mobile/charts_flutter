@@ -1,5 +1,5 @@
 name: charts_flutter
-version: 0.8.2
+version: 0.8.3
 description: Material Design charting library for flutter.
 author: Charts Team <charts_flutter@google.com>
 homepage: https://github.com/google/charts
@@ -12,7 +12,7 @@ dependencies:
   charts_common:
     git:
       url: https://github.com/amdocs-iot-mobile/charts_common.git
-      ref: v0.8.1-doxi
+      ref: v0.8.2-doxi
 
   collection: ^1.14.5
   flutter:
